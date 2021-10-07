@@ -1,0 +1,38 @@
+@import "../libs/bootstrap/bootstrap-grid.min.css";
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+@mixin text($ft , $fw , $fs , $lh , $cvet){
+  font-style: $ft;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height:$lh;
+  color: $cvet;
+};
+.container{
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+.button{
+  background: #4985FF;
+  box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  width: 200px;
+  height: 45px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@import "header";
+@import "home";
+@import "services";
+@import "about-us";
+@import "all-services";
+@import "all-projects";
+@import "video";
+@import "footer";

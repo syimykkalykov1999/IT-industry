@@ -1,0 +1,27 @@
+.home{
+  margin-bottom: 110px;
+  padding: 319px 0 335px;
+  background: url("../image/first-screen/Rectangle.png") top left/100% 100% no-repeat;
+
+  &__title{
+    @include text(normal , 500 , 16px , 20px , #FFFFFF);
+    margin-bottom: 22px;
+  }
+  &__subtitle{
+    @include text(normal , 800 , 48px , 64px , #FFFFFF);
+    margin-bottom: 50px;
+  }
+  .button{
+    @include text(normal , 500 , 16px , 20px , #FFFFFF);
+    width: 200px;
+    height: 45px;
+    background: #4985FF;
+    box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+}

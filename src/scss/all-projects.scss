@@ -1,0 +1,22 @@
+.all-projects{
+  padding: 100px 0 130px;
+  background: #F6F6F8;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    @include text(normal , bold , 36px , 53px , #000000);
+    margin-bottom: 50px;
+  }
+  &__subtitle{
+    @include text(normal , normal , 16px , 25px , #999999);
+    margin-bottom: 70px;
+  }
+  &__img{
+    margin-bottom: 63px;
+  }
+  &__button{
+    @include text(normal , 500 , 16px , 20px , #ffffff);
+  }
+}

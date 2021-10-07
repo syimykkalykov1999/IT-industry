@@ -1,0 +1,33 @@
+.header{
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #A1A1A150;
+  &__nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    align-items: center;
+  }
+  &__menu{
+    display: flex;
+    list-style-type:none ;
+  }
+  &__link{
+    @include text(normal , 500 , 16px , 20px ,  #FFFFFF);
+    margin-right: 40px;
+    position: relative;
+    cursor: pointer;
+    &:hover::before{
+      content: "";
+      height: 2px;
+      top: 60px;
+      left: -20px;
+      background-color: #ffffff;
+      width: calc(100% + 40px);
+      position: absolute;
+    }
+    &_last{
+      margin-right: 0;
+    }
+  }
+}
